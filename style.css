@@ -1,0 +1,113 @@
+:root {
+  font-size: 62.5%;
+
+  --main-color: hsl(186, 40%, 67%);
+  --header-text-color: hsl(259, 42%, 14%);
+  --button-color: hsl(159, 36%, 57%);
+}
+
+body{
+  margin: 0;
+}
+
+.page {
+  padding-block: 6.5rem;
+  margin-inline: auto;
+  width: 1000px;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5.5rem;
+}
+
+header ul {
+  display: flex;
+  gap: 4.8rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header ul li a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.3rem;
+  opacity: 0.5;
+  color: var(--header-text-color);
+}
+
+header ul li a:hover {
+  font-size: 2rem;
+  opacity: 1;
+  font-weight: bold;
+}
+
+main {
+  display: grid;
+  grid-template-areas: 'A B';
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 8rem;
+}
+
+main .col-a {
+  grid-area: A;
+}
+
+main .col-b {
+  grid-area: B;
+}
+
+.col-a h1 {
+  font-size: 4.8rem;
+}
+
+.col-a h1 span {
+  color: var(--main-color);
+}
+
+.col-a p {
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+}
+
+.col-a button {
+  border: none;
+  border-radius: 0.4rem;
+  background: var(--button-color);
+
+  display: flex;
+  gap: 1rem;
+
+  padding-inline: 3.2rem;
+  padding-block: 1.6rem;
+
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+#mulherPulandoCorda{
+  display: block;
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+}
+
+footer p {
+  font-size: 1.6rem;
+}
+
+#bolinhas {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
